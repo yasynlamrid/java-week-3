@@ -145,10 +145,10 @@ public class MapExample
 
 ## 🎯 Learning Outcomes
 
-* ✅ `List` and `ArrayList` → use when order and duplicates matter
-* ✅ `Set` → use when uniqueness is required
-* ✅ `Map` → use when storing key-value relationships
-* ✅ Know which collection to choose for different problems
+- `List` and `ArrayList` → use when order and duplicates matter
+- `Set` → use when uniqueness is required
+- `Map` → use when storing key-value relationships
+-  Know which collection to choose for different problems
 
 ---
 

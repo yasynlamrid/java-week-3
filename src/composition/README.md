@@ -54,7 +54,7 @@ public class CarWithEngine
 
 ## 🎯 Learning Outcomes
 
-✅ Understand the difference between IS-A (inheritance) and HAS-A (composition)
-✅ Implement relationships between classes using object references
-✅ Delegate responsibilities to composed objects
-✅ Recognize when to use composition instead of inheritance
+- Understand the difference between IS-A (inheritance) and HAS-A (composition)
+- Implement relationships between classes using object references
+- Delegate responsibilities to composed objects
+- Recognize when to use composition instead of inheritance

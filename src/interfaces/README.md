@@ -51,7 +51,7 @@ public class InterfaceDemo
 
 ## 🎯 Learning Outcomes
 
-✅ Define and use interfaces with implements
-✅ Understand multiple inheritance with interfaces
-✅ Use default and static methods in interfaces
-✅ Apply interfaces to achieve abstraction and flexibility
+- Define and use interfaces with implements
+- Understand multiple inheritance with interfaces
+- Use default and static methods in interfaces
+- Apply interfaces to achieve abstraction and flexibility

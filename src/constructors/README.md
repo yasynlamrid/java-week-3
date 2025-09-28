@@ -85,7 +85,7 @@ public class Book
 
 ## 🎯 Learning Outcomes
 
-✅ Differentiate between default and parameterized constructors
-✅ Use constructor chaining with this()
-✅ Understand how static fields/methods belong to the class
-✅ Track shared state across objects using static variables
+- Differentiate between default and parameterized constructors
+- Use constructor chaining with this()
+- Understand how static fields/methods belong to the class
+- Track shared state across objects using static variables

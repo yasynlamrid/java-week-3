@@ -51,9 +51,9 @@ class Dog extends Animal
 
 ## 🎯 Learning Outcomes
 
-✅ Differentiate between overloading and overriding
-✅ Use the @Override annotation when redefining methods
-✅ Apply runtime polymorphism with parent references (List<Animal>)
-✅ Write flexible code that adapts to different object types
+- Differentiate between overloading and overriding
+- Use the @Override annotation when redefining methods
+- Apply runtime polymorphism with parent references (List<Animal>)
+- Write flexible code that adapts to different object types
 
 ---

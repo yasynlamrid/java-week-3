@@ -63,11 +63,11 @@ public class Car extends Vehicle
 
 By the end of this section, you will be able to:
 
-* ✅ Use `extends` to create subclasses
-* ✅ Share properties and behavior across related classes
-* ✅ Override methods to customize behavior
-* ✅ Understand **IS-A** relationships
-* ✅ Combine inheritance with **polymorphism** using lists of parent types
+- Use `extends` to create subclasses
+- Share properties and behavior across related classes
+- Override methods to customize behavior
+- Understand **IS-A** relationships
+- Combine inheritance with **polymorphism** using lists of parent types
 
 ---
 

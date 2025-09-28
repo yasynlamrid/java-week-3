@@ -63,9 +63,9 @@ public class BankAccount
 
 By the end of this section, you should be able to:
 
-* Declare fields as **private**
-* Use **getters and setters** for controlled access
-* Add **validation logic** inside methods
-* Understand why encapsulation makes code safer and cleaner
+- Declare fields as **private**
+- Use **getters and setters** for controlled access
+- Add **validation logic** inside methods
+- Understand why encapsulation makes code safer and cleaner
 
 ---
