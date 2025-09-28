@@ -9,7 +9,8 @@ public class Student
     private int age;
 
     // Constructor
-    public Student(String name, int age) {
+    public Student(String name, int age)
+    {
         this.name = name;
         setAge(age); // validation inside setter
     }

@@ -1,19 +1,19 @@
 # 📚 Java Collections: List, ArrayList, Set, and Map
 
-The **Java Collections Framework (JCF)** provides powerful data structures for storing and manipulating groups of objects.
+The **Java Collections Framework (JCF)** provides a rich set of data structures and algorithms for storing and manipulating groups of objects efficiently.
 
 ---
 
 ## 🔑 1. List
 
-* **Interface** in Java.
-* Represents an **ordered collection** (elements have positions/indexes).
-* Can contain **duplicate elements**.
-* Access elements by index (`list.get(0)`).
+* **Interface** in Java.  
+* Represents an **ordered collection** (elements have positions/indexes).  
+* Allows **duplicate elements**.  
+* Elements can be accessed by index (`list.get(0)`).  
 
 ✅ Think of it as a **to-do list**: order matters, and items can repeat.
 
-### Example:
+### Example
 
 ```java
 import java.util.List;
@@ -28,23 +28,22 @@ public class ListExample
         names.add("Bob");
         names.add("Alice"); // duplicates allowed
 
-        System.out.println(names);     // [Alice, Bob, Alice]
+        System.out.println(names);        // [Alice, Bob, Alice]
         System.out.println(names.get(0)); // Alice
     }
 }
-```
+````
 
 ---
 
 ## 🔑 2. ArrayList
 
 * A **class** that implements the **List** interface.
-* Backed by a **resizable array** (it grows/shrinks dynamically).
+* Backed by a **resizable array** (grows and shrinks dynamically).
 * Most commonly used `List` implementation.
-* Allows **random access** (fast `get(index)` calls).
+* Provides **fast random access** (efficient `get(index)`).
 
-
-### Example:
+### Example
 
 ```java
 import java.util.ArrayList;
@@ -58,9 +57,10 @@ public class ArrayListExample
         numbers.add(20);
         numbers.add(30);
 
-        System.out.println(numbers);    // [10, 20, 30]
-        numbers.remove(1);              // remove element at index 1
-        System.out.println(numbers);    // [10, 30]
+        System.out.println(numbers); // [10, 20, 30]
+
+        numbers.remove(1);           // remove element at index 1
+        System.out.println(numbers); // [10, 30]
     }
 }
 ```
@@ -71,12 +71,12 @@ public class ArrayListExample
 
 * **Interface** in Java.
 * Represents a **collection of unique elements**.
-* No duplicates allowed.
-* No guaranteed order.
+* **No duplicates allowed**.
+* Does **not guarantee order** (depends on implementation).
 
 ✅ Think of it as a **bag of unique student IDs**: each ID must be different.
 
-### Example:
+### Example
 
 ```java
 import java.util.Set;
@@ -102,19 +102,18 @@ public class SetExample
 
 * **Interface** in Java.
 * Stores **key-value pairs**.
-* Keys must be **unique**, values can be **duplicated**.
-* No direct index access → use keys instead.
+* Keys must be **unique**, values may be **duplicated**.
+* No direct index access → retrieve values using keys.
 
 ✅ Think of it as a **dictionary**: word → definition.
 
-### Example:
+### Example
 
 ```java
 import java.util.Map;
 import java.util.HashMap;
 
-public class MapExample 
-{
+public class MapExample {
     public static void main(String[] args) 
     {
         Map<String, Integer> ages = new HashMap<>();
@@ -123,7 +122,7 @@ public class MapExample
         ages.put("Bob", 30);
         ages.put("Alice", 26); // overwrites old value
 
-        System.out.println(ages);        // {Bob=30, Alice=26}
+        System.out.println(ages);            // {Bob=30, Alice=26}
         System.out.println(ages.get("Bob")); // 30
     }
 }
@@ -139,18 +138,20 @@ public class MapExample
 | Allows duplicates | ✅ Yes                     | ✅ Yes             | ❌ No                                    | ✅ Values yes, Keys no       |
 | Ordered           | ✅ Yes                     | ✅ Yes             | ❌ (HashSet), ✅ (LinkedHashSet, TreeSet) | ❌ Depends on implementation |
 | Access by index   | ✅ Yes                     | ✅ Yes             | ❌ No                                    | ❌ No (access by key)        |
-| Common class      | `ArrayList`, `LinkedList` | `ArrayList`       | `HashSet`, `TreeSet`                    | `HashMap`, `TreeMap`        |
+| Common classes    | `ArrayList`, `LinkedList` | `ArrayList`       | `HashSet`, `TreeSet`                    | `HashMap`, `TreeMap`        |
 
 ---
 
 ## 🎯 Learning Outcomes
 
-- `List` and `ArrayList` → use when order and duplicates matter
-- `Set` → use when uniqueness is required
-- `Map` → use when storing key-value relationships
--  Know which collection to choose for different problems
+* `List` / `ArrayList` → use when **order and duplicates** matter.
+* `Set` → use when **uniqueness** is required.
+* `Map` → use when working with **key-value relationships**.
+* Understand which collection to use for different problem scenarios.
 
 ---
+
+## 🗂 Collections Framework Hierarchy (Simplified)
 
 ```txt
                          Iterable (interface)
@@ -174,3 +175,4 @@ ArrayList LinkedList Vector HashSet TreeSet EnumSet   Hashtable
 (also implements Queue) ──────> PriorityQueue
 └──> ArrayDeque
 ```
+---
