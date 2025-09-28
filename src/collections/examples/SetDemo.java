@@ -36,7 +36,7 @@ public class SetDemo {
 
         //  Iterating with forEach (lambda)
         System.out.print("Iterating with forEach: ");
-        fruits.forEach(fruit -> System.out.print(fruit + " "));
+        fruits.forEach(fruit -> System.out.print(fruit + " ")); // lambda expression
         System.out.println();
 
         //  Convert set to array

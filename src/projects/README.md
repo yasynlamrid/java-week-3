@@ -1,4 +1,4 @@
-# 📝 Projects ideas for Week 3: OOP & Collections
+# 📝 Projects ideas for Week 3
 
 1. **Library Management System** 📚
 

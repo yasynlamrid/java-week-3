@@ -12,6 +12,7 @@ It provides **abstraction** and supports **multiple inheritance of type**.
   - **abstract methods** (default before Java 8).  
   - **default methods** (Java 8+, with a body).  
   - **static methods** (Java 8+).  
+  - **private methods** (Java 9+).
   - **constants** (implicitly `public static final`).  
 - A class implements an interface using the `implements` keyword.  
 - A class can implement **multiple interfaces**.  
@@ -26,6 +27,25 @@ package week4.interfaces;
 interface Animal 
 {
     void makeSound(); // abstract method
+
+    // default method
+    default void sleep() 
+    { 
+        System.out.println("Zzz...");
+    }
+    
+    static void info() 
+    { // static method
+        System.out.println("Animals are living beings.");
+        
+        // Calling private method from static method
+        privateMethod();
+    }
+    
+    private void privateMethod() 
+    { 
+        System.out.println("This is a private method inside the interface.");
+    }
 }
 
 class Dog implements Animal 
@@ -96,13 +116,14 @@ public class InterfaceDemo
 // Interface = ability
 interface Flyable 
 {
-    void fly();
+    int MAX_ALTITUDE = 10000; // public static final by default
+    void fly();              // all methods are public abstract by default
 }
 
 // Abstract class = blueprint
 abstract class Animal 
 {
-    String name;
+    String name; 
 
     Animal(String name) 
     {
