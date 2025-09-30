@@ -16,4 +16,74 @@ package constructors.exercises;
 
 public class BankAccount
 {
+
+    private String accountNumber;
+    private double balance;
+    private static int accountCount;
+    public BankAccount(){
+        accountNumber = "0000";
+        balance = 0;
+        accountCount = accountCount +1;
+
+    }
+
+    public BankAccount(String accountNumber, double balance ){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.accountCount++;
+
+    }
+
+    public int getAcountCount(){
+        return accountCount;
+    }
+
+
+    public void deposit(double amount){
+        if(amount > 0 ){
+
+            this.balance = this.balance + amount;
+            System.out.println("Deposited: " + amount);
+
+        }
+        else {
+            System.out.println("The amount is negatif ");
+
+        }
+
+
+
+    }
+    public void withdraw(double amount){
+        if(balance >= 0 && amount > 0 ){
+
+            this.balance = this.balance - amount;
+            System.out.println("Withdrew: " + amount);
+
+        }
+        else {
+
+            System.out.println("Invalid withdrawal amount or insufficient balance.");
+        }
+
+        System.out.println("Your new balance is : "  + balance);
+
+    }
+
+    public double getBalance(){
+
+        return this.balance;
+    }
+    public static int getTotalAccounts() {
+        return accountCount;
+    }
+
+
+
+
+
+
+
+
+
 }
